@@ -19,19 +19,19 @@ FayasNoushad = Client(
 START_TEXT = """
 Hello {}, I am a google translator telegram bot.
 
-Made by @FayasNoushad
+Made by https://t.me/djjdndndjrk
 """
 HELP_TEXT = """
 - Just send a text with language code
 - And select a language for translating
 
-Made by @FayasNoushad
+Made by https://t.me/djjdndndjrk
 """
 ABOUT_TEXT = """
 - **Bot :** `Translator Bot V2`
-- **Creator :** [Fayas](https://telegram.me/TheFayas)
-- **Channel :** [Fayas Noushad](https://telegram.me/FayasNoushad)
-- **Source :** [Click here](https://github.com/FayasNoushad/Translator-Bot-V2)
+- **Creator :** [  https://t.me/djjdndndjrk ](https://telegram.me/The dejen birhanu)
+- **Channel :** [   https://t.me/djjdndndjrk ](https://telegram.me/dejen birhanu)
+- **Source :** [Click here](    https://github.com/Dejui/Translator-Bot-V2  )
 - **Language :** [Python3](https://python.org)
 - **Library :** [Pyrogram](https://pyrogram.org)
 - **Server :** [Heroku](https://heroku.com)
@@ -67,7 +67,7 @@ CLOSE_BUTTON = InlineKeyboardMarkup(
     )
 TRANSLATE_BUTTON = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('⚙ Join Updates Channel ⚙', url='https://telegram.me/FayasNoushad')
+        InlineKeyboardButton('⚙ Join Updates Channel ⚙', url='   https://github.com/Dejui/Translator-Bot-V2   ')
         ]]
     )
 LANGUAGE_BUTTONS = InlineKeyboardMarkup(
@@ -140,7 +140,7 @@ async def cb_data(bot, update):
                     translate_file.name = language + ".txt"
                     await update.reply_document(
                         document=translate_file,
-                        caption="Made by @FayasNoushad",
+                        caption="Made by    https://t.me/djjdndndjrk ",
                         reply_markup=TRANSLATE_BUTTON
                     )
                 await message.delete()
@@ -148,7 +148,7 @@ async def cb_data(bot, update):
             print(error)
             await message.edit_text("Something wrong. Contact @TheFayas.")
 
-@FayasNoushad.on_message(filters.command(["start"]))
+https://t.me/djjdndndjrk.on_message(filters.command(["start"]))
 async def start(bot, update):
     text = START_TEXT.format(update.from_user.mention)
     reply_markup = START_BUTTONS
@@ -158,7 +158,7 @@ async def start(bot, update):
         reply_markup=reply_markup
     )
 
-@FayasNoushad.on_message(filters.private & filters.text)
+https://t.me/djjdndndjrk.on_message(filters.private & filters.text)
 async def translate(bot, update):
     await update.reply_text(
         text="Select a language below for translating",
